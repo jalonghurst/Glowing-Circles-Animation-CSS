@@ -1,0 +1,113 @@
+html {
+  padding: 0;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  background-color: steelblue;
+  background-image: radial-gradient(
+    circle closest-side,
+    rgb(33, 49, 63),
+    rgba(0, 0, 0, 0.6)
+  );
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.full {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* border: 1px solid white; */
+}
+
+.rotation {
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid white; */
+  width: 60vw;
+  height: 60vw;
+  transform: rotate(0deg);
+  animation: roll 10s infinite linear;
+}
+
+.circle {
+  width: 60vw;
+  height: 60vw;
+
+  border-radius: 50%;
+}
+
+.col1 {
+  border: 3px solid rgb(30, 34, 39);
+}
+
+.col2 {
+  border: 3px solid rgb(21, 121, 228);
+}
+
+.col3 {
+  border: 3px solid rgb(31, 50, 224);
+}
+
+.first {
+  position: absolute;
+  z-index: -1;
+}
+
+.second {
+  position: absolute;
+  z-index: -2;
+  animation-delay: 0.5s;
+}
+
+.third {
+  position: absolute;
+  z-index: -3;
+  animation-delay: 1s;
+}
+
+.fourth {
+  position: absolute;
+  z-index: -4;
+  animation-delay: 1.5s;
+}
+
+.fifth {
+  position: absolute;
+  z-index: -5;
+  animation-delay: 2s;
+}
+
+.sixth {
+  position: absolute;
+  z-index: -6;
+  animation-delay: 2.5s;
+}
+
+.seventh {
+  position: absolute;
+  z-index: -7;
+  animation-delay: 3s;
+}
+
+.eighth {
+  position: absolute;
+  z-index: -7;
+  animation-delay: 3.5s;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0) scale(1);
+  }
+  50% {
+    transform: rotate(300deg) scale(1.05);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
